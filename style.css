@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+#bg{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: relative;
+}
+
+#bg img{
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: transparent;
+    padding: 30px 0px 20px 60px;
+    overflow: hidden;
+}
+
+nav{
+    width: 100%;
+    height: 50px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    color: #ffff;
+}
+
+#one{
+    display: flex;
+}
+
+#one h5{
+    letter-spacing: 2px;
+    font-weight: 100;
+    color: #ffff;
+    text-transform: uppercase;
+    margin-right: 180px;
+    opacity:0.8 ;
+}
+
+#one h6{
+    letter-spacing: 2px;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-right: 40px;
+    opacity:0.8 ;
+}
+
+#overlay h2{
+    color: #ffff;
+    opacity: 0.8;
+    font-size: 250px;
+    font-weight: 10;
+    position: absolute;
+    z-index: 90;
+}
+
+#overone{
+    top: 14%;
+    left: 25%;
+    position: absolute;
+}
+
+#overtwo{
+    top: 40%;
+    left: 43%;
+    position: absolute;   
+    z-index: 30;
+}
+
+#overlay p{
+    position: absolute;
+    color: #fff;
+    font-weight:50 ;
+    opacity: 0.5;
+    
+}
+
+#pone{
+    top: 53%;
+    left: 25%;
+}
+
+#ptwo{
+    left: 80%;
+    top: 70%;
+}
+
+#glass{
+    position: absolute;
+    left: 60%;
+    top:10% ;
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    filter: blur(40px);
+    transform: rotate(2px);
+    background-image: linear-gradient(to bottom, red,red,rgb(223, 172, 78),rgb(223, 172, 78),white,white);
+}
+
+footer{
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    top: 90%;
+    display: flex;
+}
+
+footer h5{
+    opacity: 0.5;
+    color: #fff;
+    margin-right: 37px;
+    font-size: 20px;
+    font-weight:50 ;
+}
+
+#overlay img{
+    position: absolute;
+    left: 35%;
+    top:74% ;
+    width: 150px;
+    height: 110px;
+}
+
+#right img{
+    position: absolute;
+    left: 85%;
+    top:43% ;
+    width: 100px;
+    height: 100px;
+   animation: rotate 6s linear  infinite  both;
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+#front{
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+} 
+
+
+
+#fone{
+    margin-right:200px ;
+    width: 0.5px;
+    height: 100%;
+    opacity: 0.2;
+    background-color: #ffff;
+}
+
+#ftwo{
+    margin-right:200px ;
+    width: 0.5px;
+    height: 100%;
+    opacity: 0.2;
+
+    background-color: #ffff;
+}
+
+#fthree{
+    margin-right:200px ;
+    width: 0.5px;
+    height: 100%;
+    opacity: 0.2;
+    background-color: #ffff;
+}
